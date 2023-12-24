@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="./images/food/leaf 1.png"
+         type="image/x-icon"
+      />
+      <!-- bootstrap.css -->
+      <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+      <!-- style.css -->
+      <link rel="stylesheet" href="styles/style.css" />
+      <link rel="stylesheet" href="styles/responsive.css" />
+      <!-- font Awasome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <title>Fast Food</title>
+   </head>
+   <body
+      data-bs-spy="scroll"
+      data-bs-target="navbar"
+      data-bs-smooth-scroll="true"
+   >
+      <!-- header -->
+      <header>
+         <nav
+            class="navbar navbar-expand-lg navigation-wrap shadow-lg"
+            id="navbar"
+         >
+            <div class="container">
+               <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+               >
+                  <img
+                     src="./images/food/leaf 1.png"
+                     alt="logo"
+                     class="justify-content-center logo img-fluid"
+                  />
+                  <span class="navbar-brand">fast food</span>
+               </div>
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarText"
+                  aria-controls="navbarText"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"
+                     ><i class="fa-solid fa-bars"></i
+                  ></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home"
+                           >Home</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#service">service</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#menu">menu</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <!-- Home -->
+         <section id="home">
+            <div class="container home">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <h1>
+                        Fast and yummy. <br />
+                        Good for your tummy.
+                     </h1>
+                     <a class="btn" href="#booktable">
+                        Book Table
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                     </a>
+                  </div>
+                  <div class="col-lg-6">
+                     <figure class="figure">
+                        <img
+                           src="./images/food/vegSoup.jpg"
+                           alt="vegSoup"
+                           class="img-fluid home-img img"
+                        />
+                        <div class="overlay">
+                           <figcaption class="caption">Veg-Soup</figcaption>
+                        </div>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Service Section -->
+         <section class="container mt-lg-5" id="service">
+            <div class="row service">
+               <!-- left -->
+               <div class="col-lg-6 service-img">
+                  <div class="row gx-3">
+                     <div class="col-6">
+                        <figure class="figure">
+                           <img
+                              src="./images/food/Noodles.jpg"
+                              alt="noodel"
+                              class="img-fluid img"
+                           />
+                           <div class="overlay">
+                              <figcaption class="caption">Noodles</figcaption>
+                           </div>
+                        </figure>
+                        <figure class="figure">
+                           <img
+                              src="./images/food/pasta.jpg"
+                              alt="pasta"
+                              class="img-fluid img"
+                           />
+                           <div class="overlay">
+                              <figcaption class="caption">Pasta</figcaption>
+                           </div>
+                        </figure>
+                     </div>
+                     <div class="col-6">
+                        <figure class="figure">
+                           <img
+                              src="./images/food/Grill chicken.jpg"
+                              alt="burger"
+                              class="img-fluid img"
+                           />
+                           <div class="overlay">
+                              <figcaption class="caption">Burger</figcaption>
+                           </div>
+                        </figure>
+                        <figure class="figure">
+                           <img
+                              src="./images/food/gourmet meal.jpg"
+                              alt="groumet meal"
+                              class="img-fluid img"
+                           />
+                           <div class="overlay">
+                              <figcaption class="caption">
+                                 Gourmet-Meal
+                              </figcaption>
+                           </div>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+               <!-- right -->
+               <div class="col-lg-6 content ps-5">
+                  <h2>services</h2>
+                  <p class="mt-5">
+                     we pride ourselves on more than just incredible flavors;
+                     our commitment extends to providing exceptional service
+                     that elevates your dining experience. From the moment you
+                     step through our doors or place your order, our dedicated
+                     teeam is geared towards ensuring your satisfaction at every
+                     turn.
+                  </p>
+                  <button class="service-btn btn mt-4">
+                     More Info
+                     <span><i class="fa-solid fa-chevron-right"></i></span>
+                  </button>
+               </div>
+            </div>
+         </section>
+
+         <!-- featurs -->
+         <section class="feature">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <div class="dimond-box box">
+                        <div class="dimond icon">
+                           <i class="fa-regular fa-gem"></i>
+                        </div>
+                        <div class="content-box">
+                           <h3>143+</h3>
+                           <h4>Premium Clients</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <div class="chef-box box">
+                        <div class="chef icon">
+                           <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="content-box">
+                           <h3>100+</h3>
+                           <h4>Professional Chefs</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <div class="award-box box">
+                        <div class="award icon">
+                           <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="content-box">
+                           <h3>600+</h3>
+                           <h4>Winning Awards</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <div class="reviw-box box">
+                        <div class="reviw icon">
+                           <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="content-box">
+                           <h3>110+</h3>
+                           <h4>5 Star Reviews</h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Menu -->
+         <section class="menu" id="menu">
+            <div class="container">
+               <div class="menu-content text-center">
+                  <h4>CHOOSE BEST MENUS</h4>
+                  <h3>FAST FOOD MENU</h3>
+               </div>
+               <div class="row menu-list">
+                  <div class="col-lg-4 list">
+                     <div class="chicken">
+                        <h5>chicken</h5>
+                        <p>we provide good quality chicken food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i
+                           >120</span
+                        >
+                     </div>
+                     <div class="chicken-65">
+                        <h5>chicken-65</h5>
+                        <p>we provide good quality chicken-65 food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i
+                           >140</span
+                        >
+                     </div>
+                     <div class="chicken-Tikka">
+                        <h5>chicken-Tikka</h5>
+                        <p>we provide good quality chicken-tikka food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i
+                           >110</span
+                        >
+                     </div>
+                  </div>
+                  <div class="col-lg-4 list">
+                     <div class="noodles">
+                        <h5>Noodles</h5>
+                        <p>we provide good quality food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i>80</span
+                        >
+                     </div>
+                     <div class="friedrice">
+                        <h5>friedrice</h5>
+                        <p>we provide good quality food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i>70</span
+                        >
+                     </div>
+                     <div class="manchuria">
+                        <h5>Manchuria</h5>
+                        <p>we provide good quality food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i>90</span
+                        >
+                     </div>
+                  </div>
+                  <div class="col-lg-4 list">
+                     <div class="shawarma">
+                        <h5>Shawarma</h5>
+                        <p>we provide good quality shawarmafood</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i
+                           >140</span
+                        >
+                     </div>
+                     <div class="burger">
+                        <h5>burger</h5>
+                        <p>we provide good quality burger food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i
+                           >180</span
+                        >
+                     </div>
+                     <div class="sandwich">
+                        <h5>sandwich</h5>
+                        <p>we provide good quality sandwich food</p>
+                        <span
+                           >...................
+                           <i class="fa-solid fa-indian-rupee-sign"></i
+                           >120</span
+                        >
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- booking-table -->
+         <section class="booking-table" id="booktable">
+            <div class="container">
+               <div class="row g-0">
+                  <div class="col-lg-2 chef-1">
+                     <figure class="figure">
+                        <img
+                           src="./images/food/chef1.jpg"
+                           alt="chef1"
+                           class="img-fluid img"
+                        />
+                        <div class="overlay">
+                           <figcaption class="caption">Jhon</figcaption>
+                        </div>
+                     </figure>
+                  </div>
+                  <div class="col-lg-8 book-table-border">
+                     <div class="booking-table-content text-lg-center">
+                        <h5>BOOKING TABLE</h5>
+                        <h4>Make Your Reservation</h4>
+                     </div>
+                     <form action="#" class="row g-4 form" autocomplete="off">
+                        <div class="col-md-6 mb-3 username">
+                           <input
+                              type="text"
+                              class="form-control p-3 input-username"
+                              value=""
+                              placeholder="Full Name"
+                              autocomplete="off"
+                           />
+                           <div class="error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3 email">
+                           <input
+                              type="email"
+                              class="form-control p-3 input-email"
+                              value=""
+                              placeholder="Email Address"
+                              autocomplete="off"
+                           />
+                           <div class="error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3 number">
+                           <input
+                              type="number"
+                              class="form-control p-3 input-number"
+                              value=""
+                              placeholder="Phone"
+                              autocomplete="off"
+                           />
+                           <div class="error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3 person">
+                           <input
+                              type="number"
+                              class="form-control p-3 input-person"
+                              value=""
+                              placeholder="1 Person"
+                              autocomplete="off"
+                           />
+                           <div class="error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3 date">
+                           <input
+                              type="date"
+                              class="form-control p-3 input-date"
+                              value=""
+                              placeholder="mm/dd/yyyy"
+                              autocomplete="off"
+                           />
+                           <div class="error"></div>
+                        </div>
+                        <div class="col-md-6 mb-3 time">
+                           <input
+                              type="time"
+                              class="form-control p-3 input-time"
+                              value=""
+                              placeholder="Time"
+                              autocomplete="off"
+                           />
+                           <div class="error"></div>
+                        </div>
+                        <div class="text-center my-3">
+                           <button class="booking-btn btn" type="submit">
+                              BOOKING TABLE
+                              <span
+                                 ><i class="fa-solid fa-chevron-right"></i
+                              ></span>
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-lg-2 chef-2">
+                     <figure class="figure">
+                        <img
+                           src="./images/food/chef2.jpg"
+                           alt="chef2"
+                           class="img-fluid img"
+                        />
+                        <div class="overlay">
+                           <figcaption class="caption">rambo</figcaption>
+                        </div>
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer>
+         <!-- contact -->
+         <section class="footer" id="contact">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 footer-head">
+                     <div
+                        class="d-flex justify-content-start align-items-center gap-2"
+                     >
+                        <figure class="figure">
+                           <img
+                              src="./images/food/leaf 1.png"
+                              alt="logo"
+                              class="justify-content-center logo img-fluid"
+                           />
+                        </figure>
+                        <span class="navbar-brand">fast food</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <div class="working-hour">
+                        <h5>working hour</h5>
+                        <ul>
+                           <li>sunday-Thursday</li>
+                           <span>08:00 am - 09:00 pm</span>
+                           <li>only friday</li>
+                           <span>03:00 pm - 09:00 pm</span>
+                        </ul>
+                        <h6>saturday close</h6>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <div class="contact-us">
+                        <h5>contact us</h5>
+                        <div class="location">
+                           <ul>
+                              <li>location :</li>
+                              <span>55 Main street, delhi</span>
+                              <li>Email Address :</li>
+                              <span>jack143@gmail.com</span>
+                              <li>phone Number :</li>
+                              <span>+91 9848116076</span>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <div class="gallery">
+                        <h5>gallery</h5>
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="row">
+                                 <div class="col-3">
+                                    <figure>
+                                       <img
+                                          src="./images/food/burger sm.jpg"
+                                          alt="burger sm"
+                                          class="img-fluid"
+                                       />
+                                    </figure>
+                                 </div>
+                                 <div class="col-3">
+                                    <figure>
+                                       <img
+                                          src="./images/food/biryani sm.jpg"
+                                          alt="biryani sm"
+                                          class="img-fluid"
+                                       />
+                                    </figure>
+                                 </div>
+                                 <div class="col-3 small">
+                                    <figure>
+                                       <img
+                                          src="./images/food/pasta sm.jpg"
+                                          alt="pasta sm"
+                                          class="img-fluid"
+                                       />
+                                    </figure>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <div class="row">
+                                 <div class="col-3">
+                                    <figure>
+                                       <img
+                                          src="./images/food/gourmet meal sm.jpg"
+                                          alt="groumet meal"
+                                          class="img-fluid"
+                                       />
+                                    </figure>
+                                 </div>
+                                 <div class="col-3">
+                                    <figure>
+                                       <img
+                                          src="./images/food/thali sm.jpg"
+                                          alt="thali sm"
+                                          class="img-fluid"
+                                       />
+                                    </figure>
+                                 </div>
+                                 <div class="col-3 small">
+                                    <figure>
+                                       <img
+                                          src="./images/food/tikka sm.jpg"
+                                          alt="tikka sm"
+                                          class="img-fluid"
+                                       />
+                                    </figure>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </footer>
+      <!-- bootstrap.js -->
+      <script src="./bootstrap/bootstrap.min.js"></script>
+      <!-- app.js -->
+      <script src="app.js"></script>
+   </body>
+</html>

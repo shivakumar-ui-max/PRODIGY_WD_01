@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&family=Oswald&family=Roboto&display=swap");
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+.img {
+  border: 0.1rem solid var(--p);
+}
+
+:root {
+  --bg-black: #0e1317;
+  --bg-black2: #090c0f;
+  --subheading: #b99272;
+  --p: #ced2d5;
+  --white: #ffffff;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "oswald", sans-serif;
+  --merinda: "Merienda", cursive;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--bg-black) !important;
+  font-size: 100%;
+  font-weight: 400;
+  backdrop-filter: blur(5rem);
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--subheading);
+}
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  font-family: var(--secondary-font);
+  color: var(--white);
+}
+h2 {
+  font-weight: 400;
+  font-size: 4.5rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--subheading);
+  line-height: 3rem;
+}
+h3 {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  margin-top: 2rem;
+  color: var(--white);
+  font-family: var(--secondary-font);
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  line-height: 2.2;
+}
+h5 {
+  color: var(--subheading);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  color: var(--p);
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 1.3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.8rem 1.875rem;
+  border-radius: 0.8rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.5px;
+  background-color: var(--subheading);
+  border: none;
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 0.8rem;
+  inset: 0;
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translateX(-100%);
+}
+.btn:hover {
+  color: var(--subheading);
+}
+
+.btn:hover::after {
+  -webkit-transition: all 0.6s linear 0.1s;
+  -o-transition: all 0.6s linear 0.1s;
+  -moz-transition: all 0.6s linear 0.1s;
+  transition: all 0.6s linear 0.1s;
+  transform: translateX(0);
+  z-index: -1;
+}
+
+i {
+  font-size: 1.2rem;
+}
+/*
+==========================================
+   Header Design
+==========================================
+*/
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navigation-wrap {
+  background-color: var(--bg-black2);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--subheading);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+.navigation-wrap .logo {
+  max-width: 40px;
+  height: 40px;
+  margin: 1.2rem 0;
+}
+.navigation-wrap .navbar-brand {
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.navigation-wrap .nav-item .nav-link {
+  position: relative;
+  display: inline;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  margin: 1rem;
+  letter-spacing: 1.2px;
+  padding-bottom: 1rem;
+}
+.navigation-wrap .nav-item .nav-link::after {
+  content: "";
+  background-color: var(--subheading);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.navigation-wrap .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+.navigation-wrap .navbar-toggler {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.navigation-wrap .navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navigation-wrap .navbar-toggler-icon {
+  background-image: none;
+  color: var(--white);
+}
+/*
+==========================================
+  Home Design
+==========================================
+*/
+.home {
+  margin-top: 20rem;
+  margin-bottom: 18rem;
+}
+
+.home .img {
+  border: 0.2rem solid var(--p);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/*
+==========================================
+  Services Design
+==========================================
+*/
+
+.figure {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+.figure .overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s linear 0.1s;
+  -o-transition: all 0.3s linear 0.1s;
+  -moz-transition: all 0.3s linear 0.1s;
+  transition: all 0.3s linear 0.1s;
+  opacity: 0;
+}
+
+.figure:hover,
+.figure:hover .overlay {
+  opacity: 1;
+  transform: scale(1.03);
+  -webkit-transition: all 0.3s linear 0.1s;
+  -o-transition: all 0.3s linear 0.1s;
+  -moz-transition: all 0.3s linear 0.1s;
+  transition: all 0.3s linear 0.1s;
+}
+.caption {
+  color: var(--white);
+  font-size: 2.5rem;
+  text-align: center;
+}
+.content {
+  padding: 1.5rem 3rem;
+}
+.service-btn {
+  margin-top: 2.5rem;
+}
+
+/*
+==========================================
+   Features Design
+==========================================
+*/
+.feature {
+  background-color: var(--bg-black);
+  padding: 10rem 0;
+}
+
+.feature .box .icon i {
+  color: var(--subheading);
+  font-size: 3rem;
+}
+
+.feature .box {
+  background-color: var(--bg-black2);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.feature .box h4 {
+  margin-top: 0;
+  line-height: 1.5;
+}
+.feature .box h3 {
+  font-family: var(--primary-font);
+  color: var(--subheading);
+}
+
+.feature .box .icon {
+  display: inline-block;
+  background-color: var(--bg-black);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.feature .box .icon:hover {
+  border: 1px solid var(--subheading);
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+/*
+==========================================
+   Menu Design
+==========================================
+*/
+
+.menu {
+  background-color: var(--bg-black2);
+  padding: 5rem 0;
+}
+.menu span {
+  color: var(--subheading);
+  font-family: var(--merinda);
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.menu h4 {
+  font-size: 1.7rem;
+  color: var(--subheading);
+  font-family: var(--primary-font);
+}
+
+.menu .menu-list {
+  margin-top: 7rem;
+}
+
+.menu .menu-list h5 {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 2.2rem;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.menu .menu-list .list > div {
+  margin-top: 2rem;
+}
+
+/*
+==========================================
+   Book-Table Design
+==========================================
+*/
+
+.booking-table .container {
+  padding: 9rem 0;
+}
+
+.booking-table .book-table-border {
+  border-top: 2px solid var(--subheading);
+  background-color: var(--bg-black2);
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.booking-table-content h4 {
+  margin-top: 0;
+}
+.booking-table-content h5 {
+  margin-top: 3rem;
+}
+
+.booking-table .form {
+  margin-top: 3rem;
+}
+
+.booking-table .img {
+  width: 100%;
+  height: 50rem;
+}
+.booking-table .btn {
+  margin-top: 1.7rem;
+}
+
+.form .form-control:focus {
+  border: 1px solid var(--white);
+  background-color: unset;
+  box-shadow: unset;
+}
+.form .form-control::placeholder,
+.form .form-control {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+.form .form-control,
+.form .form-control:active {
+  background-color: var(--bg-black2);
+}
+.form .error {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-family: var(--merinda);
+  /* color: var(--white); */
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/*
+==========================================
+   Footer Design
+==========================================
+*/
+.footer {
+  background-color: var(--bg-black2);
+  padding: 5rem 0;
+}
+
+.footer .figure {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.footer .figure .logo {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footer-head span {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  letter-spacing: 1.3px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.footer h5 {
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+}
+
+.footer ul > li {
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+.footer ul > span {
+  color: var(--subheading);
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  font-family: var(--primary-font);
+}
+
+.footer ul li {
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.footer h6 {
+  font-family: var(--merinda);
+  color: orange;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}

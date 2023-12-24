@@ -1,0 +1,282 @@
+/*
+==========================================
+Responsive Design
+==========================================
+*/
+
+:root {
+  --bg-black: #0e1317;
+  --bg-black2: #090c0f;
+  --subheading: #b99272;
+  --p: #ced2d5;
+  --white: #ffffff;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "oswald", sans-serif;
+  --merinda: "Merienda", cursive;
+}
+
+@media (max-width: 991px) {
+  /* navbar brand */
+  .navigation-wrap .logo {
+    max-width: 30px;
+    height: 30px;
+  }
+  .navigation-wrap .navbar-brand {
+    font-size: 1.7rem;
+    letter-spacing: 1.2px;
+  }
+  .navigation-wrap .navbar-nav {
+    height: 100vh;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    letter-spacing: 1.4px;
+    text-align: left;
+  }
+  .navigation-wrap .navbar-nav .nav-item {
+    /* background-color: aqua; */
+    margin: 1rem 0;
+  }
+
+  /* Home Design */
+  .home {
+    margin-top: 8rem;
+  }
+  .home .home-img {
+    margin-top: 7rem;
+  }
+  .figure .overlay {
+    background-color: unset;
+  }
+  .figure:hover,
+  .figure:hover .overlay {
+    opacity: 0;
+    background-color: unset;
+  }
+  .home .caption {
+    display: none;
+  }
+  /* Booking-table Design */
+  .chef-1,
+  .chef-2 {
+    display: none;
+  }
+  /* footer Design */
+  .footer .row h5 {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+  h1 {
+    font-size: 4rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  h4 {
+    margin-top: 2rem;
+    color: var(--white);
+    font-family: var(--secondary-font);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    line-height: 2.2;
+  }
+  h5 {
+    color: var(--subheading);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+  }
+
+  .btn {
+    padding: 1.5rem 1.875rem;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+  /*
+==========================================
+   Header Design
+==========================================
+*/
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navigation-wrap {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--subheading);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+  }
+  .navigation-wrap .logo {
+    max-width: 40px;
+    height: 40px;
+    margin: 1.2rem 0;
+  }
+  .navigation-wrap .navbar-brand {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    letter-spacing: 1.2px;
+  }
+  .navigation-wrap .nav-item .nav-link {
+    display: inline;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    margin: 1rem;
+    letter-spacing: 1.2px;
+  }
+  .navigation-wrap .navbar-toggler {
+    box-shadow: none;
+    border: none;
+    outline: none;
+  }
+  .navigation-wrap .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navigation-wrap .navbar-toggler-icon {
+    background-image: none;
+    color: var(--white);
+  }
+  /* Home Design */
+  .home {
+    margin-top: 1rem;
+  }
+
+  /*
+==========================================
+  Home Design
+==========================================
+*/
+  .home {
+    margin-bottom: 10rem;
+  }
+  /*
+==========================================
+  Services Design
+==========================================
+*/
+
+  .figure .overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s linear 0.1s;
+    -o-transition: all 0.3s linear 0.1s;
+    -moz-transition: all 0.3s linear 0.1s;
+    transition: all 0.3s linear 0.1s;
+    opacity: 0;
+  }
+
+  .figure:hover,
+  .figure:hover .overlay {
+    opacity: 1;
+    transform: scale(1.03);
+    -webkit-transition: all 0.3s linear 0.1s;
+    -o-transition: all 0.3s linear 0.1s;
+    -moz-transition: all 0.3s linear 0.1s;
+    transition: all 0.3s linear 0.1s;
+  }
+  .caption {
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .content {
+    padding: 1.5rem 3rem;
+  }
+  .service-btn {
+    margin-top: 2.5rem;
+  }
+
+  /*
+==========================================
+   Book-Table Design
+==========================================
+*/
+
+  .booking-table .book-table-border {
+    border-top: 1px solid var(--subheading);
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .form .form-control::placeholder,
+  .form .form-control {
+    color: var(--white);
+    font-size: 1.4rem;
+  }
+
+  /*
+==========================================
+   Footer Design
+==========================================
+*/
+
+  .footer .figure {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+  }
+
+  .footer .footer-head span {
+    font-size: 1.7rem;
+  }
+
+  .footer h5 {
+    font-size: 2rem;
+  }
+
+  .footer ul > li {
+    font-size: 1.4rem;
+  }
+  .footer ul > span {
+    font-size: 1.1rem;
+  }
+  .footer h6 {
+    font-size: 1.1rem;
+  }
+  .footer .small {
+    display: none;
+  }
+}
